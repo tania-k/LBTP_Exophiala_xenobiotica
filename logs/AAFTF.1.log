@@ -1,0 +1,110 @@
+Exo_Xeno Exophiala_xenobiotica
+[92m[Mar 05 02:08 PM][00m Running AAFTF v0.2.3
+[92m[Mar 05 02:08 PM][00m Assembling FASTQ data using Spades
+[96mCMD:[00m spades.py --threads 8 --cov-cutoff auto --mem 64 --careful -o
+        working_AAFTF/spades_Exophiala_xenobiotica --pe1-1
+        /bigdata/stajichlab/tkurb001/2020/Black_Yeasts_Illumina/working_AAFTF/Exo_Xeno_filtered_1.fastq.gz
+        --pe1-2
+        /bigdata/stajichlab/tkurb001/2020/Black_Yeasts_Illumina/working_AAFTF/Exo_Xeno_filtered_2.fastq.gz
+[92m[Mar 05 03:52 PM][00m Spades assembly finished: genomes/Exophiala_xenobiotica.spades.fasta
+[92m[Mar 05 03:52 PM][00m Assembly is 1,247 scaffolds and 30,374,947 bp
+[92m[Mar 05 03:52 PM][00m Your next command might be:
+	AAFTF vecscreen -i genomes/Exophiala_xenobiotica.spades.fasta -c 8
+
+[92m[Mar 05 03:52 PM][00m Running AAFTF v0.2.3
+prefix is  Exophiala_xenobiotica.vecscreen
+[92m[Mar 05 03:52 PM][00m Building BLAST databases for contamination screen.
+[96mCMD:[00m makeblastdb -dbtype nucl -in
+        /bigdata/operations/pkgadmin/srv/projects/db/AAFTF_DB/UniVec -out aaftf-
+        vecscreen_65899/UniVec
+[96mCMD:[00m makeblastdb -dbtype nucl -in
+        /bigdata/operations/pkgadmin/srv/projects/db/AAFTF_DB/contam_in_euks.fa
+        -out aaftf-vecscreen_65899/CONTAM_EUKS
+[96mCMD:[00m makeblastdb -dbtype nucl -in
+        /bigdata/operations/pkgadmin/srv/projects/db/AAFTF_DB/contam_in_prok.fa
+        -out aaftf-vecscreen_65899/CONTAM_PROKS
+[96mCMD:[00m makeblastdb -dbtype nucl -in
+        /bigdata/operations/pkgadmin/srv/projects/db/AAFTF_DB/mito.nt -out
+        aaftf-vecscreen_65899/MITO
+[92m[Mar 05 03:52 PM][00m CONTAM_EUKS Contamination Screen
+[96mCMD:[00m blastn -query genomes/Exophiala_xenobiotica.spades.fasta -db
+        aaftf-vecscreen_65899/CONTAM_EUKS -num_threads 8 -dust yes -soft_masking
+        true -perc_identity 90.0 -lcase_masking -outfmt 6 -out aaftf-
+        vecscreen_65899/CONTAM_EUKS.Exophiala_xenobiotica.vecscreen.blastn
+[92m[Mar 05 03:52 PM][00m CONTAM_EUKS screening finished
+[92m[Mar 05 03:52 PM][00m CONTAM_PROKS Contamination Screen
+[96mCMD:[00m blastn -query genomes/Exophiala_xenobiotica.spades.fasta -db
+        aaftf-vecscreen_65899/CONTAM_PROKS -num_threads 8 -dust yes
+        -soft_masking true -perc_identity 90.0 -lcase_masking -outfmt 6 -out
+        aaftf-
+        vecscreen_65899/CONTAM_PROKS.Exophiala_xenobiotica.vecscreen.blastn
+[92m[Mar 05 03:52 PM][00m CONTAM_PROKS screening finished
+[92m[Mar 05 03:52 PM][00m Mitochondria Contamination Screen
+[96mCMD:[00m blastn -query genomes/Exophiala_xenobiotica.spades.fasta -db
+        aaftf-vecscreen_65899/MITO -num_threads 8 -dust yes -soft_masking true
+        -perc_identity 98.6 -lcase_masking -outfmt 6 -out aaftf-
+        vecscreen_65899/MITO.Exophiala_xenobiotica.vecscreen.blastn
+[92m[Mar 05 03:52 PM][00m Mito screening finished.
+[92m[Mar 05 03:52 PM][00m Starting VecScreen, will remove terminal matches and split internal matches
+[92m[Mar 05 03:52 PM][00m Parsing VecScreen round 1: Exophiala_xenobiotica.vecscreen.r0 for aaftf-vecscreen_65899/Exophiala_xenobiotica.vecscreen.r0.vecscreen.tab
+[92m[Mar 05 03:52 PM][00m Spliting contig NODE_1_length_1978104_cov_39.333375 into [(0, 1395634), (1395678, 1978104)]
+[92m[Mar 05 03:52 PM][00m Spliting contig NODE_2_length_1472441_cov_39.277287 into [(0, 1325521), (1325560, 1472441)]
+[92m[Mar 05 03:52 PM][00m Terminal trimming NODE_18_length_576093_cov_39.347957 to [(0, 576075)]
+[92m[Mar 05 03:52 PM][00m Spliting contig NODE_20_length_496573_cov_39.558101 into [(0, 148775), (148801, 496573)]
+[92m[Mar 05 03:52 PM][00m Spliting contig NODE_23_length_425278_cov_39.100233 into [(0, 395557), (395600, 425278)]
+[92m[Mar 05 03:52 PM][00m Terminal trimming NODE_42_length_236330_cov_39.265736 to [(27, 236330)]
+[92m[Mar 05 03:52 PM][00m Spliting contig NODE_49_length_149143_cov_39.081253 into [(0, 148563), (148596, 149143)]
+[92m[Mar 05 03:52 PM][00m Spliting contig NODE_90_length_15536_cov_426.300343 into [(0, 2619), (2661, 15536)]
+[92m[Mar 05 03:52 PM][00m Spliting contig NODE_113_length_6849_cov_36.428234 into [(0, 181), (260, 6849)]
+[92m[Mar 05 03:52 PM][00m count is 110 cleanfile is aaftf-vecscreen_65899/Exophiala_xenobiotica.vecscreen.r0.clean.fsa
+[92m[Mar 05 03:53 PM][00m Parsing VecScreen round 2: Exophiala_xenobiotica.vecscreen.r1 for aaftf-vecscreen_65899/Exophiala_xenobiotica.vecscreen.r1.vecscreen.tab
+[92m[Mar 05 03:53 PM][00m count is 0 cleanfile is aaftf-vecscreen_65899/Exophiala_xenobiotica.vecscreen.r1.clean.fsa
+[92m[Mar 05 03:53 PM][00m copying aaftf-vecscreen_65899/Exophiala_xenobiotica.vecscreen.r0.clean.fsa to aaftf-vecscreen_65899/Exophiala_xenobiotica.vecscreen.tmp_vecscreen.fasta
+[92m[Mar 05 03:53 PM][00m 0 contigs will be removed:
+[92m[Mar 05 03:53 PM][00m Writing 646 cleaned contigs to: genomes/Exophiala_xenobiotica.vecscreen.fasta
+[92m[Mar 05 03:53 PM][00m Writing 0 mitochondrial contigs to: genomes/Exophiala_xenobiotica.vecscreen.mitochondria.fasta
+[92m[Mar 05 03:53 PM][00m Your next command might be:
+	AAFTF sourpurge -i genomes/Exophiala_xenobiotica.vecscreen.fasta -o genomes/Exophiala.sourpurge.fasta -c 8 --phylum Ascomycota
+
+[92m[Mar 05 03:53 PM][00m Running AAFTF v0.2.3
+[92m[Mar 05 03:53 PM][00m Assembly is 646 contigs and 30,280,774 bp
+[92m[Mar 05 03:53 PM][00m Running SourMash to get taxonomy classification for each contig
+[96mCMD:[00m sourmash compute -k 31 --scaled=1000 --singleton assembly.fasta
+[96mCMD:[00m sourmash lca classify --db
+        /bigdata/operations/pkgadmin/srv/projects/db/AAFTF_DB/genbank-k31.lca.json.gz
+        --query assembly.fasta.sig
+[92m[Mar 05 03:53 PM][00m Found 2 taxonomic classifications for contigs:
+Eukaryota;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;Exophiala;Exophiala xenobiotica
+Eukaryota;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;Exophiala
+[92m[Mar 05 03:53 PM][00m Dropping 0 contigs from taxonomy screen
+[92m[Mar 05 03:53 PM][00m Building BWA index
+[96mCMD:[00m bwa index sourmashed-tax-screen.fasta
+[92m[Mar 05 03:54 PM][00m Aligning reads to assembly with BWA
+[96mCMD:[00m bwa mem -t 8 sourmashed-tax-screen.fasta
+        /bigdata/stajichlab/tkurb001/2020/Black_Yeasts_Illumina/working_AAFTF/Exo_Xeno_filtered_1.fastq.gz
+        /bigdata/stajichlab/tkurb001/2020/Black_Yeasts_Illumina/working_AAFTF/Exo_Xeno_filtered_2.fastq.gz
+[92m[Mar 05 03:59 PM][00m Calculating read coverage per contig
+[96mCMD:[00m samtools bedcov assembly.bed remapped.bam
+[92m[Mar 05 04:00 PM][00m Average coverage for N50 contigs is 83X
+[92m[Mar 05 04:00 PM][00m Found 0 contigs with coverage less than 4.19X (5%)
+[92m[Mar 05 04:00 PM][00m Dropping 0 total contigs based on taxonomy and coverage
+[92m[Mar 05 04:00 PM][00m Sourpurged assembly is 646 contigs and 30,280,774 bp
+[92m[Mar 05 04:00 PM][00m Your next command might be:
+	AAFTF rmdup -i genomes/Exophiala_xenobiotica.sourpurge.fasta -o genomes/Exophiala.rmdup.fasta
+
+[92m[Mar 05 04:00 PM][00m Running AAFTF v0.2.3
+[92m[Mar 05 04:00 PM][00m Sorting sequences by length longest --> shortest
+[92m[Mar 05 04:00 PM][00m Output written to: genomes/Exophiala_xenobiotica.sorted.fasta
+[92m[Mar 05 04:00 PM][00m Running AAFTF v0.2.3
+Assembly statistics for: genomes/Exophiala_xenobiotica.sorted.fasta
+   CONTIG COUNT  =  646
+   TOTAL LENGTH  =  30280774
+            MIN  =  200
+            MAX  =  1423450
+         MEDIAN  =  459
+           MEAN  =  46874.26
+            L50  =  15
+            N50  =  676939
+            L90  =  49
+            N90  =  156053
+

@@ -1,0 +1,11 @@
+Loading antismash/5.1.1
+  Loading requirement: hmmer/2 hmmer/3 fasttree/2.1.11 diamond/2.0.8
+    prodigal/2.6.2 ncbi-blast/2.9.0+ muscle/3.8.425 glimmerhmm/3.0.4
+Could not find conda environment: antismash5
+You can list all discoverable environments with `conda info --envs`.
+
+/opt/linux/centos/7.x/x86_64/pkgs/anaconda3/4.5.4/bin/perl
+/opt/linux/centos/7.x/x86_64/pkgs/anaconda3/4.5.4/envs/antismash5/bin/antismash
+i17
+/var/spool/slurmd/job4179342/slurm_script: line 43: [: missing `]'
+processing annotate/Exophiala_xenobiotica

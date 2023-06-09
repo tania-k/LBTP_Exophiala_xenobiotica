@@ -1,0 +1,82 @@
+Loading checkm/1.1.3
+  Unloading conflict: miniconda2/4.4.10
+  Loading requirement: anaconda3/4.5.4
+[2021-08-23 13:57:30] INFO: CheckM v1.1.3
+[2021-08-23 13:57:30] INFO: checkm lineage_wf -t 16 -x fasta pep/ checkM/ -f checkM_taxonomy_wf_results --tab_table
+[2021-08-23 13:57:30] INFO: [CheckM - tree] Placing bins in reference genome tree.
+[2021-08-23 13:57:30] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:30] WARNING: File pep/Cladophialophora_chaetospira_TK_41.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:30] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:30] WARNING: File pep/Cladosporium_sp.JES_115.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:30] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:30] WARNING: File pep/Coniosporium_apollonis_TK_1.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:30] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:30] WARNING: File pep/Dothideales_sp.JES_113.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:30] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:30] WARNING: File pep/Dothideales_sp.JES_119.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:31] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:31] WARNING: File pep/Exophiala_xenobiotica_TK_68.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:31] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:31] WARNING: File pep/Knufia_peltigerae_TK_35.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:31] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:31] WARNING: File pep/Knufia_sp.JES_112.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:31] INFO: Identifying marker genes in 8 bins with 16 threads:
+    Finished processing 0 of 8 (0.00%) bins.    Finished processing 1 of 8 (12.50%) bins.    Finished processing 2 of 8 (25.00%) bins.    Finished processing 3 of 8 (37.50%) bins.    Finished processing 4 of 8 (50.00%) bins.    Finished processing 5 of 8 (62.50%) bins.    Finished processing 6 of 8 (75.00%) bins.    Finished processing 7 of 8 (87.50%) bins.    Finished processing 8 of 8 (100.00%) bins.
+[2021-08-23 13:57:49] INFO: Saving HMM info to file.
+[2021-08-23 13:57:49] INFO: Calculating genome statistics for 8 bins with 16 threads:
+    Finished processing 0 of 8 (0.00%) bins.    Finished processing 1 of 8 (12.50%) bins.    Finished processing 2 of 8 (25.00%) bins.    Finished processing 3 of 8 (37.50%) bins.    Finished processing 4 of 8 (50.00%) bins.    Finished processing 5 of 8 (62.50%) bins.    Finished processing 6 of 8 (75.00%) bins.    Finished processing 7 of 8 (87.50%) bins.    Finished processing 8 of 8 (100.00%) bins.
+[2021-08-23 13:57:50] INFO: Extracting marker genes to align.
+[2021-08-23 13:57:50] INFO: Parsing HMM hits to marker genes:
+    Finished parsing hits for 1 of 8 (12.50%) bins.    Finished parsing hits for 2 of 8 (25.00%) bins.    Finished parsing hits for 3 of 8 (37.50%) bins.    Finished parsing hits for 4 of 8 (50.00%) bins.    Finished parsing hits for 5 of 8 (62.50%) bins.    Finished parsing hits for 6 of 8 (75.00%) bins.    Finished parsing hits for 7 of 8 (87.50%) bins.    Finished parsing hits for 8 of 8 (100.00%) bins.[2021-08-23 13:57:50] INFO: Extracting 43 HMMs with 16 threads:
+
+    Finished extracting 0 of 43 (0.00%) HMMs.    Finished extracting 1 of 43 (2.33%) HMMs.    Finished extracting 2 of 43 (4.65%) HMMs.    Finished extracting 3 of 43 (6.98%) HMMs.    Finished extracting 4 of 43 (9.30%) HMMs.    Finished extracting 5 of 43 (11.63%) HMMs.    Finished extracting 6 of 43 (13.95%) HMMs.    Finished extracting 7 of 43 (16.28%) HMMs.    Finished extracting 8 of 43 (18.60%) HMMs.    Finished extracting 9 of 43 (20.93%) HMMs.    Finished extracting 10 of 43 (23.26%) HMMs.    Finished extracting 11 of 43 (25.58%) HMMs.    Finished extracting 12 of 43 (27.91%) HMMs.    Finished extracting 13 of 43 (30.23%) HMMs.    Finished extracting 14 of 43 (32.56%) HMMs.    Finished extracting 15 of 43 (34.88%) HMMs.    Finished extracting 16 of 43 (37.21%) HMMs.    Finished extracting 17 of 43 (39.53%) HMMs.    Finished extracting 18 of 43 (41.86%) HMMs.    Finished extracting 19 of 43 (44.19%) HMMs.    Finished extracting 20 of 43 (46.51%) HMMs.    Finished extracting 21 of 43 (48.84%) HMMs.    Finished extracting 22 of 43 (51.16%) HMMs.    Finished extracting 23 of 43 (53.49%) HMMs.    Finished extracting 24 of 43 (55.81%) HMMs.    Finished extracting 25 of 43 (58.14%) HMMs.    Finished extracting 26 of 43 (60.47%) HMMs.    Finished extracting 27 of 43 (62.79%) HMMs.    Finished extracting 28 of 43 (65.12%) HMMs.    Finished extracting 29 of 43 (67.44%) HMMs.    Finished extracting 30 of 43 (69.77%) HMMs.    Finished extracting 31 of 43 (72.09%) HMMs.    Finished extracting 32 of 43 (74.42%) HMMs.    Finished extracting 33 of 43 (76.74%) HMMs.    Finished extracting 34 of 43 (79.07%) HMMs.    Finished extracting 35 of 43 (81.40%) HMMs.    Finished extracting 36 of 43 (83.72%) HMMs.    Finished extracting 37 of 43 (86.05%) HMMs.    Finished extracting 38 of 43 (88.37%) HMMs.    Finished extracting 39 of 43 (90.70%) HMMs.    Finished extracting 40 of 43 (93.02%) HMMs.    Finished extracting 41 of 43 (95.35%) HMMs.    Finished extracting 42 of 43 (97.67%) HMMs.    Finished extracting 43 of 43 (100.00%) HMMs.
+[2021-08-23 13:57:51] INFO: Aligning 43 marker genes with 16 threads:
+    Finished aligning 0 of 43 (0.00%) marker genes.    Finished aligning 1 of 43 (2.33%) marker genes.    Finished aligning 2 of 43 (4.65%) marker genes.    Finished aligning 3 of 43 (6.98%) marker genes.    Finished aligning 4 of 43 (9.30%) marker genes.    Finished aligning 5 of 43 (11.63%) marker genes.    Finished aligning 6 of 43 (13.95%) marker genes.    Finished aligning 7 of 43 (16.28%) marker genes.    Finished aligning 8 of 43 (18.60%) marker genes.    Finished aligning 9 of 43 (20.93%) marker genes.    Finished aligning 10 of 43 (23.26%) marker genes.    Finished aligning 11 of 43 (25.58%) marker genes.    Finished aligning 12 of 43 (27.91%) marker genes.    Finished aligning 13 of 43 (30.23%) marker genes.    Finished aligning 14 of 43 (32.56%) marker genes.    Finished aligning 15 of 43 (34.88%) marker genes.    Finished aligning 16 of 43 (37.21%) marker genes.    Finished aligning 17 of 43 (39.53%) marker genes.    Finished aligning 18 of 43 (41.86%) marker genes.    Finished aligning 19 of 43 (44.19%) marker genes.    Finished aligning 20 of 43 (46.51%) marker genes.    Finished aligning 21 of 43 (48.84%) marker genes.    Finished aligning 22 of 43 (51.16%) marker genes.    Finished aligning 23 of 43 (53.49%) marker genes.    Finished aligning 24 of 43 (55.81%) marker genes.    Finished aligning 25 of 43 (58.14%) marker genes.    Finished aligning 26 of 43 (60.47%) marker genes.    Finished aligning 27 of 43 (62.79%) marker genes.    Finished aligning 28 of 43 (65.12%) marker genes.    Finished aligning 29 of 43 (67.44%) marker genes.    Finished aligning 30 of 43 (69.77%) marker genes.    Finished aligning 31 of 43 (72.09%) marker genes.    Finished aligning 32 of 43 (74.42%) marker genes.    Finished aligning 33 of 43 (76.74%) marker genes.    Finished aligning 34 of 43 (79.07%) marker genes.    Finished aligning 35 of 43 (81.40%) marker genes.    Finished aligning 36 of 43 (83.72%) marker genes.    Finished aligning 37 of 43 (86.05%) marker genes.    Finished aligning 38 of 43 (88.37%) marker genes.    Finished aligning 39 of 43 (90.70%) marker genes.    Finished aligning 40 of 43 (93.02%) marker genes.    Finished aligning 41 of 43 (95.35%) marker genes.    Finished aligning 42 of 43 (97.67%) marker genes.    Finished aligning 43 of 43 (100.00%) marker genes.
+[2021-08-23 13:57:51] INFO: Reading marker alignment files.
+[2021-08-23 13:57:51] INFO: Concatenating alignments.
+[2021-08-23 13:57:51] INFO: No genomes were identified that could be placed in the reference genome tree.
+[2021-08-23 13:57:51] INFO: { Current stage: 0:00:20.852 || Total: 0:00:20.852 }
+[2021-08-23 13:57:51] INFO: [CheckM - lineage_set] Inferring lineage-specific marker sets.
+[2021-08-23 13:57:51] INFO: Reading HMM info from file.
+[2021-08-23 13:57:51] INFO: Parsing HMM hits to marker genes:
+    Finished parsing hits for 1 of 8 (12.50%) bins.    Finished parsing hits for 2 of 8 (25.00%) bins.    Finished parsing hits for 3 of 8 (37.50%) bins.    Finished parsing hits for 4 of 8 (50.00%) bins.    Finished parsing hits for 5 of 8 (62.50%) bins.    Finished parsing hits for 6 of 8 (75.00%) bins.    Finished parsing hits for 7 of 8 (87.50%) bins.    Finished parsing hits for 8 of 8 (100.00%) bins.[2021-08-23 13:57:51] INFO: Determining marker sets for each genome bin.
+
+    Finished processing 1 of 8 (12.50%) bins (current: Knufia_sp.JES_112.aa).                                                                                 Finished processing 2 of 8 (25.00%) bins (current: Cladophialophora_chaetospira_TK_41.aa).                                                                                                  Finished processing 3 of 8 (37.50%) bins (current: Dothideales_sp.JES_113.aa).                                                                                      Finished processing 4 of 8 (50.00%) bins (current: Exophiala_xenobiotica_TK_68.aa).                                                                                           Finished processing 5 of 8 (62.50%) bins (current: Dothideales_sp.JES_119.aa).                                                                                      Finished processing 6 of 8 (75.00%) bins (current: Coniosporium_apollonis_TK_1.aa).                                                                                           Finished processing 7 of 8 (87.50%) bins (current: Cladosporium_sp.JES_115.aa).                                                                                       Finished processing 8 of 8 (100.00%) bins (current: Knufia_peltigerae_TK_35.aa).[2021-08-23 13:57:52] INFO: Marker set written to: checkM/lineage.ms
+[2021-08-23 13:57:52] INFO: { Current stage: 0:00:01.470 || Total: 0:00:22.323 }
+[2021-08-23 13:57:52] INFO: [CheckM - analyze] Identifying marker genes in bins.
+[2021-08-23 13:57:52] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:52] WARNING: File pep/Cladophialophora_chaetospira_TK_41.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:52] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:52] WARNING: File pep/Cladosporium_sp.JES_115.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:53] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:53] WARNING: File pep/Coniosporium_apollonis_TK_1.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:53] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:53] WARNING: File pep/Dothideales_sp.JES_113.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:53] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:53] WARNING: File pep/Dothideales_sp.JES_119.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:53] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:53] WARNING: File pep/Exophiala_xenobiotica_TK_68.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:53] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:53] WARNING: File pep/Knufia_peltigerae_TK_35.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:53] WARNING: Expected all files to contain sequences in nucleotide space.
+[2021-08-23 13:57:53] WARNING: File pep/Knufia_sp.JES_112.aa.fasta appears to contain amino acids sequences.
+[2021-08-23 13:57:53] INFO: Identifying marker genes in 8 bins with 16 threads:
+
+    Finished processing 0 of 8 (0.00%) bins.    Finished processing 1 of 8 (12.50%) bins.    Finished processing 2 of 8 (25.00%) bins.    Finished processing 3 of 8 (37.50%) bins.    Finished processing 4 of 8 (50.00%) bins.    Finished processing 5 of 8 (62.50%) bins.    Finished processing 6 of 8 (75.00%) bins.    Finished processing 7 of 8 (87.50%) bins.    Finished processing 8 of 8 (100.00%) bins.
+[2021-08-23 13:58:00] INFO: Saving HMM info to file.
+[2021-08-23 13:58:00] INFO: { Current stage: 0:00:07.822 || Total: 0:00:30.145 }
+[2021-08-23 13:58:00] INFO: Parsing HMM hits to marker genes:
+    Finished parsing hits for 1 of 8 (12.50%) bins.    Finished parsing hits for 2 of 8 (25.00%) bins.    Finished parsing hits for 3 of 8 (37.50%) bins.    Finished parsing hits for 4 of 8 (50.00%) bins.    Finished parsing hits for 5 of 8 (62.50%) bins.    Finished parsing hits for 6 of 8 (75.00%) bins.    Finished parsing hits for 7 of 8 (87.50%) bins.    Finished parsing hits for 8 of 8 (100.00%) bins.[2021-08-23 13:58:00] INFO: Aligning marker genes with multiple hits in a single bin:
+
+    Finished processing 0 of 8 (0.00%) bins.    Finished processing 1 of 8 (12.50%) bins.    Finished processing 2 of 8 (25.00%) bins.    Finished processing 3 of 8 (37.50%) bins.    Finished processing 4 of 8 (50.00%) bins.    Finished processing 5 of 8 (62.50%) bins.    Finished processing 6 of 8 (75.00%) bins.    Finished processing 7 of 8 (87.50%) bins.    Finished processing 8 of 8 (100.00%) bins.
+[2021-08-23 13:58:01] INFO: { Current stage: 0:00:00.546 || Total: 0:00:30.692 }
+[2021-08-23 13:58:01] INFO: Calculating genome statistics for 8 bins with 16 threads:
+    Finished processing 0 of 8 (0.00%) bins.    Finished processing 1 of 8 (12.50%) bins.    Finished processing 2 of 8 (25.00%) bins.    Finished processing 3 of 8 (37.50%) bins.    Finished processing 4 of 8 (50.00%) bins.    Finished processing 5 of 8 (62.50%) bins.    Finished processing 6 of 8 (75.00%) bins.    Finished processing 7 of 8 (87.50%) bins.    Finished processing 8 of 8 (100.00%) bins.
+[2021-08-23 13:58:01] INFO: { Current stage: 0:00:00.796 || Total: 0:00:31.488 }
+[2021-08-23 13:58:01] INFO: [CheckM - qa] Tabulating genome statistics.
+[2021-08-23 13:58:01] INFO: Calculating AAI between multi-copy marker genes.
+[2021-08-23 13:58:01] INFO: Reading HMM info from file.
+[2021-08-23 13:58:01] INFO: Parsing HMM hits to marker genes:
+    Finished parsing hits for 1 of 8 (12.50%) bins.    Finished parsing hits for 2 of 8 (25.00%) bins.    Finished parsing hits for 3 of 8 (37.50%) bins.    Finished parsing hits for 4 of 8 (50.00%) bins.    Finished parsing hits for 5 of 8 (62.50%) bins.    Finished parsing hits for 6 of 8 (75.00%) bins.    Finished parsing hits for 7 of 8 (87.50%) bins.    Finished parsing hits for 8 of 8 (100.00%) bins.[2021-08-23 13:58:02] INFO: QA information written to: checkM_taxonomy_wf_results
+[2021-08-23 13:58:02] INFO: { Current stage: 0:00:00.412 || Total: 0:00:31.901 }
+

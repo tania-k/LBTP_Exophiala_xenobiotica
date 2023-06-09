@@ -1,0 +1,59 @@
+Loading funannotate/1.8
+  Loading requirement: miniconda3/4.3.31 ncbi-rmblast/2.9.0-p2 trf/4.09 hmmer/3
+    RepeatMasker/4-1-1 jellyfish/2.3.0 lp_solve/5.5 EVM/1.1.1-live
+    genemarkESET/4.62_lic bamtools/2.4.0 RepeatScout/1.0.6 RECON/1.08
+    cd-hit/4.8.1 ncbi-blast/2.9.0+ RepeatModeler/2.0.1 gmap/2019-03-04
+    bedtools/2.29.2 tbl2asn/25.8 boost/1.68.0 augustus/3.3.3 diamond/2.0.8
+    exonerate/2.2.0 ncbi-blast/2.2.31+ cdbfasta/06272015 htslib/1.11
+    samtools/1.11 braker/2.1.4 mummer/4.0 RAxML/8.2.12 mafft/7.427 trimal/1.4.1
+    trimmomatic/0.36 exonerate/2.4.0 blat/35 tRNAscan/1.3.1 proteinortho/6.0.20
+    kent/318 signalp/5.0b fasta/36.3.8h bowtie2/2.4.1 salmon/0.9.1 java/13
+    trinity-rnaseq/2.11.0 hisat2/2.2.1 kallisto/0.46.2 gmap/2017-11-15
+    PASA/2.4.1 eggnog-mapper/2.1.0 minimap2/2.17 stringtie/2.1.1
+    CodingQuarry/2.0
+Exophiala_xenobiotica Exophiala dermatitidis
+[Jun 21 09:30 PM]: OS: CentOS Linux 7, 64 cores, ~ 528 GB RAM. Python: 3.8.5
+[Jun 21 09:30 PM]: Running 1.8.8
+[Jun 21 09:30 PM]: Parsing input files
+[Jun 21 09:30 PM]: Existing tbl found: annotate/Exophiala_xenobiotica/predict_results/xenobiotica_TK_68.tbl
+[Jun 21 09:31 PM]: Adding Functional Annotation to xenobiotica, NCBI accession: None
+[Jun 21 09:31 PM]: Annotation consists of: 11,317 gene models
+[Jun 21 09:31 PM]: 11,272 protein records loaded
+[Jun 21 09:31 PM]: Running HMMer search of PFAM version 34.0
+[Jun 21 09:37 PM]: 13,044 annotations added
+[Jun 21 09:37 PM]: Running Diamond blastp search of UniProt DB version 2021_02
+[Jun 21 09:39 PM]: 588 valid gene/product annotations from 891 total
+[Jun 21 09:39 PM]: Running Eggnog-mapper
+[Jun 21 10:37 PM]: Parsing EggNog Annotations
+[Jun 21 10:37 PM]: 21,304 COG and EggNog annotations added
+[Jun 21 10:37 PM]: Combining UniProt/EggNog gene and product names using Gene2Product version 1.70
+[Jun 21 10:37 PM]: 2,607 gene name and product description annotations added
+[Jun 21 10:37 PM]: Running Diamond blastp search of MEROPS version 12.0
+[Jun 21 10:37 PM]: 356 annotations added
+[Jun 21 10:37 PM]: Annotating CAZYmes using HMMer search of dbCAN version 9.0
+[Jun 21 10:47 PM]: 324 annotations added
+[Jun 21 10:47 PM]: Annotating proteins with BUSCO chaetothyriales_odb10 models
+[Jun 21 11:04 PM]: 5,993 annotations added
+[Jun 21 11:04 PM]: Predicting secreted and transmembrane proteins using Phobius
+     Progress: 0.23%      Progress: 0.68%      Progress: 1.09%      Progress: 1.57%      Progress: 2.00%      Progress: 2.41%      Progress: 2.80%      Progress: 3.20%      Progress: 3.65%      Progress: 4.03%      Progress: 4.44%      Progress: 4.87%      Progress: 5.36%      Progress: 5.75%      Progress: 6.20%      Progress: 6.61%      Progress: 6.99%      Progress: 7.46%      Progress: 7.87%      Progress: 8.30%      Progress: 8.73%      Progress: 9.08%      Progress: 9.50%      Progress: 9.94%      Progress: 10.42%      Progress: 10.82%      Progress: 11.26%      Progress: 11.68%      Progress: 12.17%      Progress: 12.56%      Progress: 13.01%      Progress: 13.49%      Progress: 13.86%      Progress: 14.19%      Progress: 14.59%      Progress: 14.98%      Progress: 15.46%      Progress: 15.89%      Progress: 16.24%      Progress: 16.68%      Progress: 17.08%      Progress: 17.50%      Progress: 17.85%      Progress: 18.28%      Progress: 18.64%      Progress: 19.13%      Progress: 19.50%      Progress: 19.89%      Progress: 20.31%      Progress: 20.79%      Progress: 21.29%      Progress: 21.69%      Progress: 22.14%      Progress: 22.54%      Progress: 23.00%      Progress: 23.41%      Progress: 23.86%      Progress: 24.33%      Progress: 24.83%      Progress: 25.28%      Progress: 25.72%      Progress: 26.14%      Progress: 26.55%      Progress: 27.02%      Progress: 27.35%      Progress: 27.86%      Progress: 28.26%      Progress: 28.67%      Progress: 29.06%      Progress: 29.52%      Progress: 29.93%      Progress: 30.31%      Progress: 30.81%      Progress: 31.19%      Progress: 31.54%      Progress: 31.94%      Progress: 32.37%      Progress: 32.72%      Progress: 33.18%      Progress: 33.52%      Progress: 33.94%      Progress: 34.32%      Progress: 34.77%      Progress: 35.15%      Progress: 35.57%      Progress: 36.00%      Progress: 36.46%      Progress: 36.84%      Progress: 37.31%      Progress: 37.72%      Progress: 38.17%      Progress: 38.57%      Progress: 39.01%      Progress: 39.51%      Progress: 39.56%      Progress: 39.63%      Progress: 39.96%      Progress: 40.40%      Progress: 40.84%      Progress: 41.18%      Progress: 41.64%      Progress: 42.12%      Progress: 42.57%      Progress: 42.95%      Progress: 43.40%      Progress: 43.87%      Progress: 44.26%      Progress: 44.65%      Progress: 45.03%      Progress: 45.38%      Progress: 45.83%      Progress: 46.27%      Progress: 46.60%      Progress: 47.05%      Progress: 47.42%      Progress: 47.87%      Progress: 48.26%      Progress: 48.69%      Progress: 49.08%      Progress: 49.52%      Progress: 49.94%      Progress: 50.42%      Progress: 50.78%      Progress: 51.23%      Progress: 51.67%      Progress: 52.08%      Progress: 52.51%      Progress: 52.95%      Progress: 53.34%      Progress: 53.73%      Progress: 54.12%      Progress: 54.54%      Progress: 54.99%      Progress: 55.31%      Progress: 55.80%      Progress: 56.19%      Progress: 56.62%      Progress: 57.05%      Progress: 57.49%      Progress: 57.88%      Progress: 58.29%      Progress: 58.68%      Progress: 59.08%      Progress: 59.53%      Progress: 59.94%      Progress: 60.38%      Progress: 60.86%      Progress: 61.20%      Progress: 61.62%      Progress: 62.07%      Progress: 62.46%      Progress: 62.89%      Progress: 63.28%      Progress: 63.68%      Progress: 64.06%      Progress: 64.53%      Progress: 64.98%      Progress: 65.38%      Progress: 65.83%      Progress: 66.31%      Progress: 66.74%      Progress: 67.21%      Progress: 67.61%      Progress: 68.09%      Progress: 68.51%      Progress: 68.91%      Progress: 69.35%      Progress: 69.82%      Progress: 70.25%      Progress: 70.78%      Progress: 71.20%      Progress: 71.62%      Progress: 72.04%      Progress: 72.48%      Progress: 72.89%      Progress: 73.32%      Progress: 73.63%      Progress: 74.03%      Progress: 74.45%      Progress: 74.81%      Progress: 75.21%      Progress: 75.59%      Progress: 76.01%      Progress: 76.42%      Progress: 76.86%      Progress: 77.29%      Progress: 77.67%      Progress: 78.04%      Progress: 78.46%      Progress: 78.88%      Progress: 79.34%      Progress: 79.77%      Progress: 80.17%      Progress: 80.57%      Progress: 80.90%      Progress: 81.30%      Progress: 81.75%      Progress: 82.14%      Progress: 82.58%      Progress: 83.02%      Progress: 83.46%      Progress: 83.92%      Progress: 84.36%      Progress: 84.79%      Progress: 85.18%      Progress: 85.66%      Progress: 86.07%      Progress: 86.48%      Progress: 86.93%      Progress: 87.30%      Progress: 87.74%      Progress: 88.21%      Progress: 88.64%      Progress: 89.11%      Progress: 89.43%      Progress: 89.90%      Progress: 90.31%      Progress: 90.79%      Progress: 91.20%      Progress: 91.67%      Progress: 92.11%      Progress: 92.52%      Progress: 92.96%      Progress: 93.39%      Progress: 93.76%      Progress: 94.22%      Progress: 94.69%      Progress: 95.09%      Progress: 95.52%      Progress: 95.95%      Progress: 96.46%      Progress: 96.83%      Progress: 97.25%      Progress: 97.61%      Progress: 98.03%      Progress: 98.48%      Progress: 98.86%      Progress: 99.28%      Progress: 99.88% [Jun 21 11:09 PM]: Predicting secreted proteins with SignalP
+[Jun 21 11:23 PM]: 634 secretome and 2,634 transmembane annotations added
+[Jun 21 11:23 PM]: Parsing InterProScan5 XML file
+[Jun 21 11:28 PM]: Now parsing antiSMASH v5 results, finding SM clusters
+[Jun 21 11:28 PM]: Found 18 clusters, 45 biosynthetic enyzmes, and 74 smCOGs predicted by antiSMASH
+[Jun 21 11:28 PM]: Found 0 duplicated annotations, adding 94,946 valid annotations
+[Jun 21 11:28 PM]: Converting to final Genbank format, good luck!
+[Jun 21 11:31 PM]: Creating AGP file and corresponding contigs file
+[Jun 21 11:31 PM]: Cross referencing SM cluster hits with MIBiG database version 1.4
+[Jun 21 11:31 PM]: Creating tab-delimited SM cluster output
+[Jun 21 11:31 PM]: Writing genome annotation table.
+[Jun 21 11:32 PM]: Funannotate annotate has completed successfully!
+
+        We need YOUR help to improve gene names/product descriptions:
+           0 gene/products names MUST be fixed, see annotate/Exophiala_xenobiotica/annotate_results/Gene2Products.must-fix.txt
+           0 gene/product names need to be curated, see annotate/Exophiala_xenobiotica/annotate_results/Gene2Products.need-curating.txt
+           15 gene/product names passed but are not in Database, see annotate/Exophiala_xenobiotica/annotate_results/Gene2Products.new-names-passed.txt
+
+        Please consider contributing a PR at https://github.com/nextgenusfs/gene2product
+
+-------------------------------------------------------
+-------------------------------------------------------

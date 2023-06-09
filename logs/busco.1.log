@@ -1,0 +1,4 @@
+~/bigdata/2020/Black_Yeasts_Illumina/assembly/BUSCO ~/bigdata/2020/Black_Yeasts_Illumina/assembly
+WARNING	An augustus species is mentioned in the config file, dataset default species (aspergillus_nidulans) will be ignored
+ERROR	Impossible to read /bigdata/stajichlab/tkurb001/2020/Black_Yeasts_Illumina/assembly/genomes/Exo_Xeno.sorted.fasta
+~/bigdata/2020/Black_Yeasts_Illumina/assembly
