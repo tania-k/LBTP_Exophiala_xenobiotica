@@ -1,0 +1,15 @@
+# BUSCO version is: 3.0.2 
+# The lineage dataset is: ascomycota_odb9 (Creation date: 2016-02-13, number of species: 75, number of BUSCOs: 1315)
+# To reproduce this run: python /opt/linux/centos/7.x/x86_64/pkgs/busco/3.0.2/scripts/run_BUSCO.py -i /bigdata/stajichlab/tkurb001/2020/Black_Yeasts_Illumina/assembly/genomes/Exophiala_xenobiotica.sorted.fasta -o Exophiala_xenobiotica -l /bigdata/operations/pkgadmin/srv/projects/db/BUSCO/v9/ascomycota_odb9/ -m genome -c 4 --long -t /scratch/879317_1/ -sp anidulans
+#
+# Summarized benchmarking in BUSCO notation for file /bigdata/stajichlab/tkurb001/2020/Black_Yeasts_Illumina/assembly/genomes/Exophiala_xenobiotica.sorted.fasta
+# BUSCO was run in mode: genome
+
+	C:97.9%[S:97.9%,D:0.0%],F:1.7%,M:0.4%,n:1315
+
+	1287	Complete BUSCOs (C)
+	1287	Complete and single-copy BUSCOs (S)
+	0	Complete and duplicated BUSCOs (D)
+	22	Fragmented BUSCOs (F)
+	6	Missing BUSCOs (M)
+	1315	Total BUSCO groups searched

@@ -1,0 +1,11 @@
+Assembly statistics for: genomes/Exophiala_xenobiotica.sorted.fasta
+   CONTIG COUNT  =  646
+   TOTAL LENGTH  =  30280774
+            MIN  =  200
+            MAX  =  1423450
+         MEDIAN  =  459
+           MEAN  =  46874.26
+            L50  =  15
+            N50  =  676939
+            L90  =  49
+            N90  =  156053
